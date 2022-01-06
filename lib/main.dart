@@ -37,6 +37,21 @@ class _MaterialFlutterAppState extends State<MaterialFlutterApp> {
         child: Icon(Icons.add),
         onPressed: () {},
       ),
+      body: Container(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.asset('images/flutter.png', width: 200, fit: BoxFit.fill),
+              const Text(
+                'Hello Flutter',
+                style: TextStyle(
+                    fontFamily: 'Pacifico', fontSize: 30, color: Colors.blue),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
